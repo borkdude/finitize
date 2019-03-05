@@ -1,7 +1,6 @@
 (ns finitize.core-test
   (:require
-   [clojure.test :as t :refer [deftest is are testing]
-    #?@(:cljs [:include-macros true])]
+   [clojure.test :as t :refer [deftest is are testing]]
    [finitize.core :as f :refer [finitize]]))
 
 (deftest finitize-test
