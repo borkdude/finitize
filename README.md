@@ -1,6 +1,6 @@
 # finitize
 
-Limit and realize possibly infinite objects
+Limit and realize possibly infinite seqs
 
 ## Rationale
 
@@ -30,6 +30,7 @@ user=> (finitize (map inc (range)) 10)
 ;; calling `finitize` on something which is not a seq-like data structure will just return the thing:
 user=> (finitize 1)
 1
+;; so it's safe to call it on anything
 ```
 
 ## Extend
