@@ -26,6 +26,10 @@ user=> (finitize (map inc (range)))
 ;; this is customizable by providing an additional argument:
 user=> (finitize (map inc (range)) 10)
 (1 2 3 4 5 6 7 8 9 10)
+
+;; calling `finitize` on something which is not a seq-like data structure will just return the thing:
+user=> (finitize 1)
+1
 ```
 
 ## Extend
