@@ -1,4 +1,5 @@
 # finitize
+[![Clojars Project](https://img.shields.io/clojars/v/finitize.svg)](https://clojars.org/finitize)
 
 Limit and realize possibly infinite seqs
 
