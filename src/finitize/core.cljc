@@ -11,6 +11,11 @@
 
 (extend-protocol Finitize
 
+  nil
+  (finitize
+    ([this] this)
+    ([this n] this))
+
   #?(:clj Object :cljs default)
   (finitize
     ([this] this)

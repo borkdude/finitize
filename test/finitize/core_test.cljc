@@ -4,6 +4,10 @@
    [finitize.core :as f :refer [finitize]]))
 
 (deftest finitize-test
+  (testing "nil"
+    (is (nil? (finitize nil)))
+    (is (nil? (finitize nil 100))))
+
   (testing "default"
     (is (= 1 (finitize 1)))
     (is (= 1 (finitize 1 100))))
